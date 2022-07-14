@@ -1,3 +1,5 @@
+
+
 * {
   box-sizing: border-box;
 }
@@ -12,6 +14,7 @@ body, html {
 
 .timeclass{
   color: black;
+  font-family: 'Style Script', cursive;
 }
 /* The actual timeline (the vertical ruler) */
 .timeline {
