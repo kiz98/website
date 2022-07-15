@@ -28,7 +28,7 @@ body, html {
   content: '';
   position: absolute;
   width: 6px;
-  background-color: white;
+  background-color: gray;
   top: 0;
   bottom: 0;
   left: 50%;
@@ -50,12 +50,14 @@ body, html {
   width: 25px;
   height: 25px;
   right: -17px;
-  background-color: white;
-  border: 4px solid #FF9F55;
+  background-color: red;
+  border: 4px solid darkgray;
   top: 15px;
   border-radius: 50%;
   z-index: 1;
 }
+
+
 
 /* Place the container to the left */
 .left {
@@ -103,9 +105,15 @@ body, html {
 /* The actual content */
 .content {
   padding: 20px 30px;
-  background-color: white;
+  background-color: darkviolet;
   position: relative;
-  border-radius: 6px;
+  border-radius: 4px;
+}
+
+.content:hover{
+  font-size: 150%;
+  font-weight: bold;
+  border-color: white;
 }
 
 /* Media queries - Responsive timeline on screens less than 600px wide */

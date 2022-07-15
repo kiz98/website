@@ -13,25 +13,125 @@
 </div>
 
 <link href="https://fonts.googleapis.com/css?family=Raleway:200,100,400" rel="stylesheet" type="text/css" />
-<script src="index.js"></script>
-<h1>Welcome to Kiz's
+
+
+
+<p id="demo" class="bday" style="border: transparent;">Birthday</p>
+
+
+
+<script>
+var countDownDate = new Date("Oct 28, 2022 00:00:01").getTime();
+
+
+var x = setInterval(function() {
+
+  var now = new Date().getTime();
+  var distance = countDownDate - now;
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Display the result in the element with id="demo"
+  document.getElementById("demo").innerHTML = "Birthday in: " + days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+  console.log(now)
+
+  // If the count down is finished, write some text
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "Passed";
+  }
+}, 1000);
+</script>
+
+
+
+
+
+
+
+
+
+<section>
+  <script src="index.js"></script>
+  <h1>Welcome to Kiz's
   <span
      class="txt-rotate"
      data-period="2000"
      data-rotate='["website", "domain", "profile", "digital artifact", "introduction"]'></span>
 </h1>
+</section>
 
-<br>
-<div class="directions">
-  <h2 style="color: red;"> <b>Directions</b></h2>
-  <h4>•  back </h4>
-  <p>Takes you back a page. Click it enough, maybe you get back here.</p>
-  <h4>• About me </h4>
-  <p>On this page, you will see my hobbies, interests, facts, friends and much more.</p>
-  <p>Essentially, its my actual introduction.</p>
-  <h4>• idk </h4>
-  <p>Well, i havent decided what to put here, ill think of something</p>
-</div>
+
+
+<section>
+  <div class="container reveal">
+    <h2>Main description</h2>
+    <div class="text-container">
+      <div class="text-box">
+        <h3>Names</h3>
+        <p>
+          Kiz, Liz, Mel, Meli, Ky, or whatever you so decide 
+        </p>
+      </div>
+      <div class="text-box">
+        <h3>Location & Ethnicity</h3>
+        <p id="mtz"; style="color: white;">
+           a
+        </p>
+        <script>
+          const gmtDateTime = new Date().toUTCString();
+
+          var x = setInterval(function() {
+
+
+            document.getElementById("mtz").innerHTML = "I live in england, " + "Current time: " gmtDateTime;
+        </script>
+      </div>
+      <div class="text-box">
+        <h3>WORDS</h3>
+        <p>
+          aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section>
+  <div class="container reveal">
+    <div class="text-container">
+      <div class="text-box">
+        <h3>Pronouns</h3>
+        <p>
+          Non binary polyamorus pyrodensified neurodivergent birodynamical attack laptop/they/them.
+        </p>
+      </div>
+      <div class="text-box">
+        <h3>a</h3>
+        <p>
+          a
+        </p>
+      </div>
+      <div class="text-box">
+        <h3>a</h3>
+        <p>
+          a
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
 
 
 <h3 class="footer"> <b> Dont look at me.. you wouldnt like me looking at you.. </b></h3>
